@@ -126,3 +126,27 @@ section {
 .team-member {
   transition: transform 0.3s, box-shadow 0.3s;
 }
+
+
+/* ✅ 다크모드 스타일 적용 */
+body.dark-mode {
+  background: #1e1e1e !important;
+  color: white !important;
+}
+
+body.dark-mode section {
+  background: #2c2c2c !important;
+  color: white !important;
+}
+
+
+/* ✅ 다크모드에서 제목 색상 */
+body.dark-mode h2 {
+  color: white !important;
+}
+
+
+/* ✅ 다크모드에서 링크 색상 */
+body.dark-mode a {
+  color: white !important;
+}

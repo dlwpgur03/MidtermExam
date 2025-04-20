@@ -6,8 +6,11 @@
     <title>이제혁의 포트폴리오</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+      body {
+        background: white;
+      }
       .dark-mode {
-        background: #1e1e1e;
+        background: #1e1e1e !important;
       }
       section {
         opacity: 0;
@@ -36,7 +39,7 @@
           GitHub 프로필 보기
         </a>
       </p>
-      <button onclick="toggleDarkMode()">🌙 다크모드</button>
+      <button id="modeToggle">🌙 다크모드</button>
     </header>
 
     <nav>
@@ -53,16 +56,55 @@
       <img src="1.jpeg" alt="내 사진" class="rounded-photo" />
       <p><strong>이제혁의 포트폴리오에 오신 것을 환영합니다!</strong></p>
       <p>위 메뉴를 눌러 각 페이지로 이동해 보세요!</p>
-      <p><strong>현재 S.C.P 에서 활동하고 있습니다.</strong></p>
+      <br />
+      <h3>👤 나에 대해</h3>
+      <p><strong>이름:</strong> 이제혁</p>
+      <p><strong>학번:</strong> 22학번</p>
+      <p><strong>전공:</strong> 정보보호학과</p>
+      <p><strong>MBTI:</strong> ESTP</p>
+      <br />
+      <h3>💻 나의 기술 스택</h3>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+      <br />
+      <h3>📚 나의 관심 분야</h3>
       <p>
-        <strong
-          >최근 어떤 분야에 관심이 있는지 찾지를 못해 고민 중입니다.</strong
-        >
+        <strong>정보보안, 웹 해킹</strong>
       </p>
+      <p>현제 웹 해킹 관심이 있어서 공부 중에 있습니다.</p>
       <p>
-        이번 학기 목표는 저의 관심 분야를 찾고 그 분야에 대해 깊이 있게 공부하는
-        것입니다.
+        <strong>웹 해킹을 공부하면서 웹 개발에도 관심이 생겼습니다.</strong>
       </p>
+      <br />
+      <h3>👾 활동</h3>
+      <img
+        src="SCP_1.png"
+        alt="S.C.P"
+        style="
+          width: 5%;
+          max-width: 60px;
+          display: block;
+          margin: 20px 0;
+          float: left;
+          border-radius: 10px;
+        "
+      />
+      <br />
+      <strong>S.C.P</strong>
+      <p>
+        <strong>2022 ~ 현재</strong>
+        <br />
+        <br />
+      </p>
+
+      <h3>📅 나의 목표</h3>
+      <p></p>
+      <p>정보보안 쪽으로 계속해서 간다면 <strong>B.O.B 수료</strong></p>
+      <br />
+
       <h3>🔍 최신 GitHub 프로젝트</h3>
       <div id="repo-list"></div>
     </section>
@@ -71,6 +113,9 @@
       <p>&copy; 2025 이제혁</p>
     </footer>
 
-    <script src="script.js"></script>
-  </body>
+    
+    
+  
+<script src="script.js"></script>
+</body>
 </html>
