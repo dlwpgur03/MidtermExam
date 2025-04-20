@@ -100,3 +100,29 @@ footer {
   margin-bottom: 10px;
   border-radius: 10px; /* 둥근 모서리 */
 }
+
+
+/* ✅ JS 기능용 스타일들 */
+
+/* 페이드 아웃 효과 */
+.fade-out {
+  opacity: 0;
+  transition: opacity 0.5s ease-out;
+}
+
+/* 스크롤 시 나타나는 애니메이션 */
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.5s ease;
+}
+
+/* 팀 멤버 카드 hover 효과 */
+.team-member {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
