@@ -3,82 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SECON 후기</title>
+    <title>SECON</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .section-box img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 1rem;
+        border-radius: 10px;
+      }
+
+      .section-box {
+        text-align: center;
+      }
+
+      .section-box h2 {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>🎤 SECON 후기</h1>
-      <p>
-        <a href="https://github.com/dlwpgur03" target="_blank">
-          <img
-            src="GitHub_Invertocat_Logo.svg.png"
-            alt="GitHub Logo"
-            style="width: 20px; vertical-align: middle; margin-right: 8px"
-          />
-          GitHub 프로필 보기
-        </a>
-      </p>
-      <button id="modeToggle">🌙 다크모드</button>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">🏠 홈으로</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="projects.html">과제 모음</a></li>
         <li><a href="secon.html">SECON</a></li>
-        <li><a href="team.html">Team Project</a></li>
+        <li><a href="team.html">Team</a></li>
       </ul>
     </nav>
 
-    <section>
-      <p>
-        SECON은 보안 컨퍼런스로, 다양한 최신 기술과 사례를 직접 보고 배울 수
-        있는 기회였습니다.<br />
+    <main>
+      <section class="section-box" style="color: #000">
+        <h2>🎤 SECON 2024 참가 후기</h2>
+        <p>
+          많은 기업들이 있었고 여러 발표, 제품 들을 봤었는데 <br />
+          절반 정도의 기업들이 CCTV와 AI를 연결 하여 얼굴 인식을 하는
+          기업이였습니다. <br />
+          생각보다 비슷한 기업들이 너무 많았고 새로운 발견을 하기 어려워서
+          아쉬웠던 SECON 방문 이였던거 같습니다.
+        </p>
+        <img src="img/1.jpeg" alt="SECON 2024 현장 사진" />
+        <img src="img/2.jpeg" alt="SECON 2024 현장 사진" />
+      </section>
+    </main>
 
-        생각보다 카메라와 ai를 접합해 사람들의 얼굴 분석을 하는 기업들이
-        많았던거 같고 적외선을 이용하여 현제 스트레스 지수 등을 측정 해주는
-        기기를 보고 신기했었습니다.<br />
-        그치만 많은 기업들이 다 비슷한 주제로 발표를 하러 나와있었고 그래서 좀
-        많이 아쉬웠습니다.
-      </p>
-
-      <!-- ✅ 사진 두 장 삽입 -->
-      <br />
-      <p>
-        <strong>SECON 출입증 모음</strong><br />
-        >
-        <img
-          src="2.jpeg"
-          alt="SECON 출입증 모음"
-          style="
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-          "
-        />
-        <br />
-      </p>
-
-      <p>
-        <strong>SECON 단체 사진</strong><br />
-        >
-        <img
-          src="3.jpeg"
-          alt="SECON 단체 사진"
-          style="
-            width: 100%;
-            max-width: 600px;
-            display: block;
-            margin: 20px auto;
-            border-radius: 10px;
-          "
-        />
-      </p>
-    </section>
-
-    <script src="script.js"></script>
+    <footer>
+      <p>&copy; 2025 포트폴리오 by 이제혁</p>
+    </footer>
   </body>
 </html>

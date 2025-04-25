@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GitHub</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      #repo-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 1rem;
+      }
+
+      #repo-list li {
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        border-bottom: 1px solid #ccc;
+      }
+
+      #repo-list a {
+        font-weight: bold;
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      #repo-list a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="projects.html">과제 모음</a></li>
+        <li><a href="secon.html">SECON</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="section-box">
+        <h2>📌 GitHub 레포지토리 목록</h2>
+        <p>저의 GitHub에서 공개된 저장소들을 아래에서 확인할 수 있습니다.</p>
+        <ul id="repo-list">
+          불러오는 중...
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 포트폴리오 by 이제혁</p>
+    </footer>
+
+    <script>
+      fetch('https://api.github.com/users/dlwpgur03/repos')
+        .then((res) => res.json())
+        .then((data) => {
+          const list = document.getElementById('repo-list')
+          list.innerHTML = ''
+          data.forEach((repo) => {
+            const li = document.createElement('li')
+            li.innerHTML = `<a href="${repo.html_url}" target="_blank">${
+              repo.name
+            }</a><br><small>${repo.description || '설명이 없습니다.'}</small>`
+            list.appendChild(li)
+          })
+        })
+        .catch(() => {
+          document.getElementById('repo-list').innerText =
+            '레포지토리를 불러오는 데 실패했습니다.'
+        })
+    </script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      .profile-box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #fff;
+        border: 2px solid #ccc;
+        border-radius: 15px;
+        padding: 2rem;
+        margin: 3rem auto;
+        max-width: 900px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .profile-info ul {
+        list-style: none;
+        padding: 0;
+        font-size: 1.1rem;
+        color: #000;
+        margin-bottom: 1rem;
+      }
+
+      .profile-info h1 {
+        margin-bottom: 1rem;
+        color: #000;
+      }
+
+      .profile-img img {
+        width: 200px;
+        height: auto;
+        border-radius: 15px;
+      }
+
+      .hobby-list {
+        list-style: none;
+        padding: 0;
+        font-size: 1.1rem;
+        color: #333;
+        margin-top: 1rem;
+      }
+
+      .hobby-list li:first-child {
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="projects.html">과제 모음</a></li>
+        <li><a href="secon.html">SECON</a></li>
+        <li><a href="team.html">Team</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="profile-box">
+        <div class="profile-info">
+          <h1>자기소개</h1>
+          <ul>
+            <li><strong>이름 :</strong> 이제혁</li>
+            <li><strong>생년월일 :</strong> 2003.10.01</li>
+            <li><strong>동아리 :</strong> S.C.P</li>
+            <li><strong>활동 기간 :</strong> 2022 ~ 현재</li>
+            <li><strong>관심 분야 :</strong> 웹 개발, 웹 해킹, 앱 개발</li>
+          </ul>
+          <ul>
+            <li><strong>이메일 :</strong> jehyuk1001@gmail.com</li>
+            <li>
+              <strong>github :</strong>
+              <a href="https://github.com/dlwpgur03"
+                >https://github.com/dlwpgur03</a
+              >
+            </li>
+            <li><strong>전화번호 :</strong> 010 - 8981 - 2027</li>
+          </ul>
+          <ul>
+            <li>
+              <strong>사용 가능한 언어:</strong> HTML, CSS, JavaScript, Python,
+              C
+            </li>
+          </ul>
+          <ul class="hobby-list">
+            <li>취미:</li>
+            <li>🚗 드라이브</li>
+            <li>🎵 노래 듣기</li>
+            <li>🎮 게임</li>
+            <li>🍰 디저트 먹기</li>
+          </ul>
+        </div>
+        <div class="profile-img">
+          <img src="img/me.png" alt="이제혁의 프로필 사진" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 포트폴리오 by 이제혁</p>
+    </footer>
+  </body>
+</html>

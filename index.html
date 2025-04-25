@@ -3,116 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>이제혁의 포트폴리오</title>
+    <title>개인 포트폴리오</title>
     <link rel="stylesheet" href="style.css" />
-    <style>
-      body {
-        background: white;
-      }
-      .dark-mode {
-        background: #1e1e1e !important;
-      }
-      section {
-        opacity: 0;
-        transform: translateY(30px);
-        transition: all 0.5s ease;
-      }
-      section.visible {
-        opacity: 1;
-        transform: translateY(0);
-      }
-      .team-member {
-        transition: transform 0.3s, box-shadow 0.3s;
-      }
-    </style>
+    <link rel="stylesheet" href="typing.css" />
   </head>
   <body>
-    <header>
-      <h1>이제혁의 포트폴리오</h1>
-      <p>
-        <a href="https://github.com/dlwpgur03" target="_blank">
-          <img
-            src="GitHub_Invertocat_Logo.svg.png"
-            alt="GitHub Logo"
-            style="width: 20px; vertical-align: middle; margin-right: 8px"
-          />
-          GitHub 프로필 보기
-        </a>
-      </p>
-      <button id="modeToggle">🌙 다크모드</button>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">🏠 홈으로</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="projects.html">과제 모음</a></li>
         <li><a href="secon.html">SECON</a></li>
-        <li><a href="team.html">Team Project</a></li>
+        <li><a href="team.html">Team</a></li>
       </ul>
     </nav>
 
-    <section style="overflow: hidden">
-      <h2>🏠 메인 페이지</h2>
-      <img src="1.jpeg" alt="내 사진" class="rounded-photo" />
-      <p><strong>이제혁의 포트폴리오에 오신 것을 환영합니다!</strong></p>
-      <p>위 메뉴를 눌러 각 페이지로 이동해 보세요!</p>
-      <br />
-      <h3>👤 나에 대해</h3>
-      <p><strong>이름:</strong> 이제혁</p>
-      <p><strong>학번:</strong> 22학번</p>
-      <p><strong>전공:</strong> 정보보호학과</p>
-      <p><strong>MBTI:</strong> ESTP</p>
-      <br />
-      <h3>💻 나의 기술 스택</h3>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-      </ul>
-      <br />
-      <h3>📚 나의 관심 분야</h3>
-      <p>
-        <strong>정보보안, 웹 해킹</strong>
-      </p>
-      <p>현제 웹 해킹 관심이 있어서 공부 중에 있습니다.</p>
-      <p>
-        <strong>웹 해킹을 공부하면서 웹 개발에도 관심이 생겼습니다.</strong>
-      </p>
-      <br />
-      <h3>👾 활동</h3>
-      <img
-        src="SCP_1.png"
-        alt="S.C.P"
-        style="
-          width: 5%;
-          max-width: 60px;
-          display: block;
-          margin: 20px 0;
-          float: left;
-          border-radius: 10px;
-        "
-      />
-      <br />
-      <strong>S.C.P</strong>
-      <p>
-        <strong>2022 ~ 현재</strong>
-        <br />
-        <br />
-      </p>
-
-      <h3>📅 나의 목표</h3>
-      <p></p>
-      <p>정보보안 쪽으로 계속해서 간다면 <strong>B.O.B 수료</strong></p>
-      <br />
-
-      <h3>🔍 최신 GitHub 프로젝트</h3>
-      <div id="repo-list"></div>
+    <section class="black-banner">
+      <div class="intro">
+        <img src="img/me.png" alt="프로필 사진" class="profile-pic" />
+        <div class="intro-text">
+          <p class="typing-text" id="typing"></p>
+        </div>
+      </div>
     </section>
 
+    <main>
+      <br />
+      <h1>아래에 간단한 설명이 있습니다.</h1>
+      <h2>스크롤 해보세요!</h2>
+      <section class="reveal-section">
+        <p class="reveal-text">이름 : 이제혁</p>
+        <p class="reveal-text">생년월일 : 2003.10.01</p>
+        <p class="reveal-text">동아리 : S.C.P</p>
+        <p class="reveal-text">활동 기간 : 2022 ~ 현제</p>
+        <p class="reveal-text">관심 분야 : 웹 개발, 웹 해킹, 앱 개발</p>
+      </section>
+    </main>
+
     <footer>
-      <p>&copy; 2025 이제혁</p>
+      <p>&copy; 2025 포트폴리오 by 이제혁</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="typing.js"></script>
+    <script src="scroll.js"></script>
   </body>
 </html>

@@ -3,81 +3,130 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Project</title>
+    <title>Team</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .team-container {
+        max-width: 960px;
+        margin: 3rem auto;
+        padding: 2rem;
+        background-color: #fff;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      }
+
+      .team-container h2 {
+        text-align: center;
+        margin-bottom: 1.5rem;
+        color: #000;
+      }
+
+      .team-member {
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 1rem;
+      }
+
+      .team-member:last-child {
+        border-bottom: none;
+      }
+
+      .team-member h3 {
+        margin: 0 0 0.5rem;
+        color: #222;
+      }
+
+      .team-member p {
+        margin: 0.2rem 0;
+        color: #444;
+      }
+
+      .team-member a {
+        color: #007acc;
+        text-decoration: none;
+      }
+
+      .team-member a:hover {
+        text-decoration: underline;
+      }
+
+      .team-member:hover {
+        background-color: #f3faff;
+        border-radius: 12px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        transform: scale(1.01);
+      }
+    </style>
   </head>
   <body>
-    <header>
-      <h1>🤝 팀 프로젝트</h1>
-      <p>
-        <a href="https://github.com/dlwpgur03" target="_blank">
-          <img
-            src="GitHub_Invertocat_Logo.svg.png"
-            alt="GitHub Logo"
-            style="width: 20px; vertical-align: middle; margin-right: 8px"
-          />
-          GitHub 프로필 보기
-        </a>
-      </p>
-      <button id="modeToggle">🌙 다크모드</button>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="index.html">🏠 홈으로</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="github.html">GitHub</a></li>
+        <li><a href="projects.html">과제 모음</a></li>
         <li><a href="secon.html">SECON</a></li>
-        <li><a href="team.html">Team Project</a></li>
+        <li><a href="team.html">Team</a></li>
       </ul>
     </nav>
 
-    <section>
-      <p><strong>팀명:</strong> CMD(코드 마스터 다요~)</p>
-      <p><strong>팀원:</strong> 이제혁, 박한빈, 김서진</p>
-      <ul>
-        <li class="team-member">
-          22학번 이제혁
-          <a href="https://github.com/dlwpgur03" target="_blank">GitHub</a>
-        </li>
-        <li class="team-member">
-          22학번 👑박한빈👑<a
-            href="https://github.com/han122400"
-            target="_blank"
-            >GitHub</a
-          >
-        </li>
-        <li class="team-member">
-          22학번 김서진<a href="https://github.com/Daru0613" target="_blank"
-            >GitHub</a
-          >
-        </li>
-      </ul>
-      <p>
-        <strong>제혁이의 Page:</strong>
-        <a href="https://midterm-exam-sepia.vercel.app" target="_blank"
-          >바로가기</a
-        >
-      </p>
-      <p>
-        <strong>한빈이의 Page:</strong>
-        <a href="https://myportfolio-web-blond.vercel.app" target="_blank"
-          >바로가기</a
-        >
-      </p>
-      <p>
-        <strong>서진이의 Page:</strong>
-        <a href="https://portfolio-brown-pi-95.vercel.app" target="_blank"
-          >바로가기</a
-        >
-      </p>
-      <p>
-        <strong>팀 프로젝트</strong>
-        <a href="https://web-team-project.vercel.app" target="_blank"
-          >바로가기</a
-        >
-      </p>
-    </section>
+    <main>
+      <section class="team-container">
+        <h2>🤝 우리 팀을 소개합니다</h2>
 
-    <script src="script.js"></script>
+        <div class="team-member">
+          <h3>박한빈 (팀장)</h3>
+          <p>역할: SKILL</p>
+          <p>
+            GitHub:
+            <a href="https://github.com/han122400" target="_blank"
+              >github.com/han122400</a
+            >
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>이제혁</h3>
+          <p>역할: AI</p>
+          <p>
+            GitHub:
+            <a href="https://github.com/dlwpgur03" target="_blank"
+              >github.com/dlwpgur03</a
+            >
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>김서진</h3>
+          <p>역할: Home & Team</p>
+          <p>
+            GitHub:
+            <a href="https://github.com/Daru0613" target="_blank"
+              >github.com/Daru0613</a
+            >
+          </p>
+        </div>
+
+        <div class="team-member">
+          <h3>📁 팀 프로젝트: 생산형 AI</h3>
+          <p>
+            우리 팀은 생산형 AI의 개념과 활용 사례를 조사하고 이를 발표 자료로
+            정리하여 발표를 진행했습니다.
+          </p>
+          <p>
+            Team Link :
+            <a
+              href="https://web-team-project.vercel.app/index.html"
+              target="_blank"
+              >https://web-team-project.vercel.app/index.html</a
+            >
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 포트폴리오 by 이제혁</p>
+    </footer>
   </body>
 </html>
