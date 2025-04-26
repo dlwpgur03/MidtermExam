@@ -1,4 +1,3 @@
-
 /* 기본 설정 */
 :root {
   --bg: #f9f9f9;
@@ -133,8 +132,85 @@ footer {
   transform: translateY(0);
 }
 
-
 main h1 {
   color: #000;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  .intro {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .intro-text {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .profile-box {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .profile-img img {
+    width: 150px;
+    margin-top: 1rem;
+  }
+
+  .team-member {
+    text-align: center;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+
+  .intro {
+    flex-direction: column;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .intro-text {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .profile-pic {
+    width: 130px;
+    margin-bottom: 1rem;
+  }
+
+  h1,
+  h2,
+  p {
+    padding: 0 1rem;
+  }
+
+  .black-banner {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 1rem;
+  }
+
+  .black-banner .intro {
+    flex-direction: column;
+  }
 }

@@ -4,7 +4,7 @@
   white-space: pre-wrap;
   border-right: 2px solid #000;
   animation: blink 0.7s infinite;
-  width: 100%;
+  width: 75%;
   text-align: left;
   box-sizing: border-box;
 }
